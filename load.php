@@ -17,7 +17,9 @@ spl_autoload_register('ClassAutoLoad');
 $ObjLayouts = new layouts();
 
 //require_once "structure/menus.php";
+//Stores new layout class
 $ObjMenus = new menus();
+
 //$Obj = new fnc();
 //print "me";
 // $path = dirname(__FILE__) . DIRECTORY_SEPARATOR.  ;
