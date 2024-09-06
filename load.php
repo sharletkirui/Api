@@ -19,6 +19,7 @@ $ObjLayouts = new layouts();
 //require_once "structure/menus.php";
 //Stores new layout class
 $ObjMenus = new menus();
+$ObjContents = new contents();
 
 //$Obj = new fnc();
 //print "me";
