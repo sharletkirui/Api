@@ -24,7 +24,9 @@ margin: 0;
     color:black;
     background-color: azure;
 }
-
+.topnav-right{
+    float: right;
+}
 
 .footer{
     background-color: black;
