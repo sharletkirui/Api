@@ -15,12 +15,17 @@ spl_autoload_register('ClassAutoLoad');
 
 //require_once "structure/layouts.php";
 $ObjLayouts = new layouts();
+$ObjMenus = new menus();
+$ObjContents = new contents();
+$ObjMenus = new menus();
+$ObjContents = new contents();
+require "constants/constants.php";
+require "constants/dbConnection.php";
+$conn = new dbConnection(DBTYPE,HOSTNAME,DBPORT,HOSTUSER,HOSTPASS,DBNAME);
+
 
 //require_once "structure/menus.php";
 //Stores new layout class
-$ObjMenus = new menus();
-$ObjContents = new contents();
-
 //$Obj = new fnc();
 //print "me";
 // $path = dirname(__FILE__) . DIRECTORY_SEPARATOR.  ;
