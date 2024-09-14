@@ -1,4 +1,6 @@
 <?php 
+require "includes/constants.php";
+require "includes/dbConnection.php";
 //Class Auto Load 
 function ClassAutoLoad($ClassName){
     $directories = ["forms","processes","structure","tables","global","store"];
@@ -19,8 +21,6 @@ $ObjMenus = new menus();
 $ObjContents = new contents();
 $ObjMenus = new menus();
 $ObjContents = new contents();
-require "constants/constants.php";
-require "constants/dbConnection.php";
 $conn = new dbConnection(DBTYPE,HOSTNAME,DBPORT,HOSTUSER,HOSTPASS,DBNAME);
 
 
