@@ -20,8 +20,12 @@ $ObjLayouts = new layouts();
 $ObjMenus = new menus();
 $ObjContents = new contents();
 $ObjMenus = new menus();
-$ObjContents = new contents();
+$Objforms = new forms();
+
 $conn = new dbConnection(DBTYPE,HOSTNAME,DBPORT,HOSTUSER,HOSTPASS,DBNAME);
+// Creating process intances
+$ObjAuth = new auth();
+$ObjAuth->signup($conn);
 
 
 //require_once "structure/menus.php";
